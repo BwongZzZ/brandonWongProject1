@@ -1,0 +1,380 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search-results-button,input[type=search]::-webkit-search-results-decoration{-webkit-appearance:none;-moz-appearance:none}input[type=search]{-webkit-appearance:none;-moz-appearance:none;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}textarea{overflow:auto;vertical-align:top;resize:vertical}audio,canvas,video{display:inline-block;max-width:100%}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}a:focus{outline:thin dotted}a:active,a:hover{outline:0}img{border:0;-ms-interpolation-mode:bicubic}figure{margin:0}form{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}button,html,input,select,textarea{color:#222}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}img{vertical-align:middle}fieldset{border:0;margin:0;padding:0}textarea{resize:vertical}.chromeframe{margin:.2em 0;background:#ccc;color:#000;padding:.2em 0}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+/* *************************** */
+
+/* CHANGE SETUP SNIPPETS TO CAMELCASE OR LOSE 1 MARK!!!!!!!!! */
+
+/* CHANGE FOLDER AND FILES TO CAMELCASE !!!!!!!!!! */
+/* *************************** */
+
+
+/* GLOBAL STYLES*/
+
+/* striping all spacing from elements */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* correct wrapper to use */
+.wrapper {
+    max-width: 1450px;
+    width: 80%;
+    margin: 0 auto;
+
+    /* border: red 1px solid; */
+}
+
+/* makes the heading break to the next line */
+span {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    /* object-fit: cover; */
+}
+
+h1,
+h2,
+h4,
+i.fa-instagram,
+i.fa-facebook-f,
+i.fa-snapchat-ghost,
+i.fa-twitter,
+a,
+input {
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+p,
+label {
+    color: #FFFFFF;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.darkGreenBg {
+    background-color: #152D20; 
+}
+
+.lightGreenBg {
+    background-color: #C3D3CB;
+}
+
+.blackBg {
+    background-color: #000000;
+}
+
+
+
+/* color palette */
+/* 
+#FCFCFC
+#C3D3CB
+#152D20
+#000000 
+*/
+
+/* HEADER STYLES */
+
+header {
+    background-image: url("../assets/animal-land-assets/image-1.jpg");
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+nav {
+    /* background-color: green;     */
+}
+
+nav ul {
+    padding: 25px 0 0 150px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    font-size: 1.8rem;
+    padding-right: 25px;
+}
+
+
+.heading1 {
+    font-size: 10rem;
+    width: 60%;
+    text-align: end;
+    float: right;
+    padding-top: 110px;
+    padding-right: 120px;
+}
+
+.socialIcons {
+    float: right;
+    padding: 220px 50px 0 510px;
+}
+
+i.fa-instagram,
+i.fa-facebook-f,
+i.fa-snapchat-ghost,
+i.fa-twitter {
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+i.fa-instagram {
+    padding-left: 1px;
+}
+i.fa-facebook-f {
+    padding-left: 3.5px;
+}
+
+/* MAIN STYLES */
+
+/* Section 1 */
+
+.orangeCatImg,
+.suzieStoryContent {
+    float: left;
+}
+
+.orangeCatImg {
+    width: calc(30%);
+}
+
+img {
+    width: 100%;
+}
+
+.section1 .wrapper {
+    padding: 100px 0;
+}
+
+.suzieStoryContent {
+    width: calc(70% - 30px);
+    margin-left: 30px;
+}
+
+.suzieStoryContent h2 {
+    color: #FFFFFF;
+    font-size: 4rem;
+    padding-bottom: 20px;
+}
+
+.suzieStoryContent p {
+    font-size: 1.8rem;
+    padding-bottom: 30px;
+    line-height: 2.5rem;
+}
+
+.suzieStoryContent input {
+    color: #152D20;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* Section 2 */
+
+.section2 {
+    background-color: #C3D3CB;
+}
+
+.section2 div {
+    padding: 100px 0;
+}
+
+.section2 h2 {
+    color: #152D20;
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;   
+}
+
+.section2 li {
+    float: left;
+    margin-right: 30px;
+    width: calc((100% - 60px) / 3);
+}
+
+.section2 ul li:last-child {
+    margin-right: 0;
+}
+
+/* Section 3 */
+
+.section3 div {
+    padding: 100px 0;
+}
+
+.section3 li{
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+.section3 p {
+    padding-top: 20px;
+    font-size: 3rem;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+}
+
+.section li:nth-child(3n) {
+    margin-right: 0;
+}
+
+.section3 a {
+    font-size: 3rem;
+}
+
+i.fa-paw,
+i.fa-calendar-check,
+i.fa-shopping-bag {
+    font-size: 5rem;
+    width: 90%;
+}
+
+/* Section 4 & Section 5*/
+
+.zebraImage,
+.kittyContent {
+    float: right;
+}
+
+.kittyImage,
+.zebraContent {
+    float: left;
+}
+
+.section4 div {
+    width: 50%;
+    height: 650px;
+}
+
+.section4 img {
+    height: 100%;
+    
+}
+
+.section4 p {
+    color: #152D20;
+    font-size: 2rem;
+}
+
+h3 {
+    color: #152D20;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.section4 input {
+    background-color: #152D20;
+    border: #152D20 1px solid;
+    font-size: 2rem;
+    padding: 15px 30px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* Footer */
+
+footer li {
+    padding-bottom: 5px;
+}
+
+footer li:first-child,
+h4 {
+    padding-top: 100px;
+}
+
+h4 {
+    padding-bottom: 10px;
+}
+
+footer li:last-child {
+    padding-bottom: 100px;
+}
+
+footer ul,
+footer form {
+    float: left;
+    font-size: 1.7rem;
+}
+
+footer form {
+    text-align: center;
+    width: 53%;
+}
+
+footer ul {
+    width: 23.5%;
+}
+
+.contactInfo {
+    text-align: end;
+}
+
+form input[type="email"] {
+    padding: 7.5px 170px 7.5px 30px;
+    margin-top: 20px;
+}
+
+form input[type="button"] {
+    background-color: #000000;
+    border: #000000 1px solid;
+    padding: 10px 30px;
+}
+
+input::placeholder {
+    color: #152D20;
+    text-transform: none;
+}
+.copyright {
+    background-color: #000000;
+}
+
+.copyright p {
+    padding: 10px;
+    font-size: 1.4rem;
+    text-align: center;
+}
