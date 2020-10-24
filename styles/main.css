@@ -481,6 +481,24 @@ input::placeholder {
         padding-top: 50px;
     }
 
+    /* Section 3 Styles */
+
+    .spanFaPaw  {
+        padding-top: 10px;
+    }
+
+    .section3 li{
+        width: 100%;
+    }
+
+    .section3 li:first-child {
+        padding-bottom: 40px;
+    }
+
+    .spanIcon {
+        padding-bottom: 20px;
+    }
+
     /* Section 4 & 5 Styles (950px) */
 
     .zebraImage,
