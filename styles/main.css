@@ -40,13 +40,12 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* correct wrapper to use */
 .wrapper {
     max-width: 1450px;
     width: 80%;
     margin: 0 auto;
 
-    /* border: red 1px solid; */
+    border: red 1px solid;
 }
 
 /* makes the heading break to the next line */
@@ -352,57 +351,67 @@ h3 {
 
 /* Footer */
 
-footer li {
-    padding-bottom: 5px;
+.footerInfo {
+    padding: 50px 0;
 }
 
-footer li:first-child,
-h4 {
-    padding-top: 100px;
+footer li {
+    padding-bottom: 5px;
 }
 
 h4 {
     padding-bottom: 10px;
 }
 
-footer li:last-child {
-    padding-bottom: 100px;
+footer ul {
+    width: 25%;
+    float: left;
+    font-size: 1.7rem;
 }
 
-footer ul,
 footer form {
+    width: 50%;
     float: left;
     font-size: 1.7rem;
 }
 
 footer form {
     text-align: center;
-    width: 53%;
 }
 
 footer ul {
-    width: 23.5%;
+    /* width: 23.5%; */
 }
 
 .contactInfo {
     text-align: end;
 }
 
+/* there is white space between the email input and button input - will try using position: relative */
 form input[type="email"] {
-    padding: 7.5px 170px 7.5px 30px;
+    padding: 7.5px 150px 7.5px 30px;
     margin-top: 20px;
+    position: relative;
+    left: 10px;  
 }
+
 
 form input[type="button"] {
     background-color: #000000;
     border: #000000 1px solid;
-    padding: 10px 30px;
+    padding: 11px 30px;
+    padding-top: 10px;
+    font-family: 'Cormorant Garamond', serif;  
 }
 
 input::placeholder {
-    color: #152D20;
+    color: #000000;
     text-transform: none;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    opacity: 1;
 }
+
 .copyright {
     background-color: #000000;
 }
