@@ -78,13 +78,13 @@ i.fa-snapchat-ghost,
 i.fa-twitter,
 a,
 input {
-    color: #FFFFFF;
+    color: #FCFCFC;
     text-transform: uppercase;
 }
 
 p,
 label {
-    color: #FFFFFF;
+    color: #FCFCFC;
 }
 
 
@@ -103,8 +103,8 @@ h4 {
     background-color: #C3D3CB;
 }
 
-.blackBg {
-    background-color: #000000;
+.whiteBg {
+    background-color: #FCFCFC;
 }
 
 
@@ -202,7 +202,7 @@ img {
 }
 
 .suzieStoryContent h2 {
-    color: #FFFFFF;
+    color: #FCFCFC;
     font-size: 5.1rem;
     padding-bottom: 20px;
 }
@@ -325,13 +325,13 @@ i.fa-shopping-bag {
 .section4 p {
     color: #152D20;
     font-size: 2rem;
-    width: 80%;
+    width: 90%;
     line-height: 2.9rem;
     padding-bottom: 50px;
 }
 
 .kittyContent p {
-    width: 70%;
+    width: 95%;
 }
 
 h3 {
@@ -339,6 +339,7 @@ h3 {
     font-size: 3.5rem;
     text-transform: uppercase;
     padding-bottom: 20px;
+    line-height: 4rem;
 }
 
 .section4 input {
