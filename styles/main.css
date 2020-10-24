@@ -437,3 +437,51 @@ input::placeholder {
     font-size: 1.4rem;
     text-align: center;
 }
+
+/* MEDIA QUERY */
+
+/* @media (max-width: 950px) */
+
+@media (max-width: 950px) {
+    
+    nav ul {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    h1 {
+        font-size: 9rem;
+        text-align: end;
+        float: right;
+        padding-right: 40px;
+    }
+
+    figure {
+        width: 100%;
+    }
+
+    .suzieStoryContent {
+        width: 100%;
+        margin-left: 0;
+
+        text-align: center;
+    }
+
+    .suzieStoryContent h2,
+    .suzieStoryContent p {
+        text-align: left;
+
+    }
+    .suzieStoryContent h2 {
+        padding-top: 50px;
+
+    }
+
+    
+}
+
+
+/* @media (max-width: 768px) */
+
+
+/* @media (max-width: 480px) */
