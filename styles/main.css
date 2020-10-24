@@ -381,18 +381,19 @@ h4 {
     font-family: 'Roboto', sans-serif;
 }
 
-footer ul {
-    width: 25%;
+footer ul,
+footer form {
     float: left;
     font-size: 1.7rem;
+}
+
+footer ul {
+    width: 25%;
 }
 
 footer form {
     width: 50%;
-    float: left;
-    font-size: 1.7rem;
 }
-
 
 footer li {
     padding-bottom: 5px;
@@ -442,12 +443,16 @@ input::placeholder {
 
 /* @media (max-width: 950px) */
 
+    /* Nav Styles (950px) */
+
 @media (max-width: 950px) {
     
     nav ul {
         text-align: center;
         padding-left: 0;
     }
+
+    /* Section 1 Styles */
 
     h1 {
         font-size: 9rem;
@@ -474,10 +479,84 @@ input::placeholder {
     }
     .suzieStoryContent h2 {
         padding-top: 50px;
-
     }
 
+    /* Section 4 & 5 Styles (950px) */
+
+    .zebraImage,
+    .kittyContent {
+        float: left;
+    }
+
+    .section4 div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .zebraContent,
+    .kittyContent {
+        padding-left: 0;
+    }
+    .zebraContent p,
+    .kittyContent p {
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    /* Footer Styling (950px) */
     
+    footer ul {
+    width: 100%;        
+    text-align: center;
+    }
+
+    footer form {
+        width: 100%;
+    }
+
+    footer li {
+        display: inline;
+        margin-right: 25px;
+    }
+
+    .contactInfo li {
+        display: block;
+        margin-right: 0;
+    }
+
+    .contactInfo {
+        text-align: center;
+    }
+
+    h4 {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .contactInfo h4 {
+        padding-bottom: 5px;
+    }
+
+    footer span {
+        display: inline-block;
+    }
+
+    form input[type="email"] {
+        text-align: center;
+        padding-left: 90px;
+        padding-right: 90px;
+        margin-bottom: 10px;
+    }
+
+    form input[type="button"] {
+        display: block;
+        padding-left: 140px;
+        padding-right: 140px;
+        /* text-align: center; */
+    }
+
+
 }
 
 
