@@ -106,7 +106,6 @@ h4 {
 
 /* won't hover or focus on social icons */
 a:hover, 
-
 i.fa-instagram:hover,
 i.fa-facebook-f:hover,
 i.fa-snapchat-ghost:hover,
@@ -136,6 +135,8 @@ header {
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
+
+    position: relative;
 }
 
 nav ul {
@@ -158,6 +159,14 @@ h1 {
     float: right;
     padding-top: 100px;
     padding-right: 140px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+i.fa-bars {
+    display: none;
 }
 
 .socialIcons {
@@ -603,20 +612,69 @@ input::placeholder {
     }
 
     /* absolute left 400px will create bleeding issues !!! - But position absolute right 1000px WORKS!!! */
-    header ul {
+    nav {
         position: absolute;
+        top: 63px;
         right: 1000px;
+    }
+
+    .socialIcons {
+        padding: 0;
+        position: absolute;
+        top: 240px;
+        right: 1055px;
     }
 
     header li {
         display: block;
+        padding-bottom: 20px;
     }
 
-    
-    .socialIcons {
+    nav a {
         padding: 0;
+    }
+
+    input[type="checkbox"] {
+        display: block;
+        opacity: 0;
+        width: 80px;
+        height: 75px;
         position: absolute;
-        right: 1000px;
+        top: -4px;
+        right: 12px;
+        z-index: 100;    
+        position: fixed;
+
+    }
+
+    i.fa-bars {
+        display: block;
+        font-size: 50px;
+        position: absolute;
+        top: 8px;
+        right: 30px;
+        color: #FFFFFF;
+        z-index: 50;
+        position: fixed;
+    }
+
+    input[type="checkbox"]:hover ~ i.fa-bars,
+    input[type="checkbox"]:focus ~ i.fa-bars {
+        color: orange;
+    }
+
+    input[type="checkbox"]:checked ~ nav,
+    input[type="checkbox"]:checked ~ .socialIcons {
+        background-color: rgb(0, 0, 0, 0.5);
+        position: absolute;
+        right: 0px;
+        text-align: center;
+        width: 25%;
+        position: fixed;
+    }
+
+    input[type="checkbox"]:checked ~ .socialIcons {
+        padding-top: 20px;
     }
 
     /* Section 2 Styles  */
@@ -658,4 +716,11 @@ input::placeholder {
     .section4 input {
         margin-bottom: 100px;
     }
+
+    /* Footer (480p) */
+
+    /* form input {
+        padding-right: 50%;
+        padding-left: 50%;
+    } */
 }
