@@ -135,7 +135,6 @@ header {
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
-
     position: relative;
 }
 
@@ -612,24 +611,27 @@ input::placeholder {
     }
 
     /* absolute left 400px will create bleeding issues !!! - But position absolute right 1000px WORKS!!! */
+
     nav {
         position: absolute;
-        top: 63px;
+        top: 90px;
         right: 1000px;
+        transition: all 1s ease-in;
     }
 
+    
+    header li {
+        display: inline-block;
+        padding: 0 15px 20px 15px; 
+    }
+    
     .socialIcons {
         padding: 0;
         position: absolute;
-        top: 240px;
+        top: 153px;
         right: 1055px;
     }
-
-    header li {
-        display: block;
-        padding-bottom: 20px;
-    }
-
+    
     nav a {
         padding: 0;
     }
@@ -661,16 +663,19 @@ input::placeholder {
     input[type="checkbox"]:hover ~ i.fa-bars,
     input[type="checkbox"]:focus ~ i.fa-bars {
         color: orange;
+        background-color: rgb(0, 0, 0, 0.5);
+        height: 43px;
     }
 
     input[type="checkbox"]:checked ~ nav,
     input[type="checkbox"]:checked ~ .socialIcons {
-        background-color: rgb(0, 0, 0, 0.5);
+        background-color: rgb(0, 0, 0, 0.8);
         position: absolute;
-        right: 0px;
+        left: 0px;
         text-align: center;
-        width: 25%;
+        width: 100%;
         position: fixed;
+        transition: all 1.3s ease-in;
     }
 
     input[type="checkbox"]:checked ~ .socialIcons {
@@ -717,10 +722,4 @@ input::placeholder {
         margin-bottom: 100px;
     }
 
-    /* Footer (480p) */
-
-    /* form input {
-        padding-right: 50%;
-        padding-left: 50%;
-    } */
 }
