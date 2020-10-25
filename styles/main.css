@@ -495,6 +495,10 @@ input::placeholder {
         padding-bottom: 40px;
     }
 
+    .section3 span {
+        font-size: 3rem;
+    }
+
     .spanIcon {
         padding-bottom: 20px;
     }
@@ -530,12 +534,13 @@ input::placeholder {
     }
 
     footer form {
-        width: 100%;
+        width: 99%;
     }
 
     footer li {
         display: inline;
-        margin-right: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     .contactInfo li {
@@ -560,6 +565,10 @@ input::placeholder {
         display: inline-block;
     }
 
+    form label {
+        display: block;
+    }
+
     form input[type="email"] {
         text-align: center;
         padding-left: 90px;
@@ -571,14 +580,59 @@ input::placeholder {
         display: block;
         padding-left: 140px;
         padding-right: 140px;
-        /* text-align: center; */
     }
-
-
 }
-
 
 /* @media (max-width: 768px) */
 
+@media (max-width: 768px) {
+
+    
+    /* Section 2 Styles  */
+    
+    .section2 h2 {
+        font-size: 4rem;
+        padding-bottom: 50px;
+    }
+
+    .section2 li {
+        width: calc((100% - 60px) / 2);
+    }
+    
+    .section2 li:last-child {
+        display: none;  
+    }
+    
+}
+    
 
 /* @media (max-width: 480px) */
+
+@media (max-width: 480px) {
+
+    /* Footer (480px) */
+
+    /* .zebraImage img,
+    .kittyImage img{
+        object-fit: cover; 
+    } */
+
+    /* Section 4 Styles (480px) */
+
+    .section4 div {
+        height: auto;
+    } 
+
+    .section4 img {
+        height: 50%;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+    
+    .section4 input {
+        margin-bottom: 100px;
+    }
+  
+}
