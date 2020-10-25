@@ -138,10 +138,6 @@ header {
     background-attachment: scroll;
 }
 
-nav {
-    /* background-color: green;     */
-}
-
 nav ul {
     padding: 25px 0 0 150px;
 }
@@ -587,7 +583,39 @@ input::placeholder {
 
 @media (max-width: 768px) {
 
-    
+    /* Header Styles (480px) */
+
+    header {
+        background-position-x: -330px;
+        position: relative;
+    }
+
+    /* for future slide nav */
+    header ul {
+        position: absolute;
+        left: 400px;
+    }
+
+    header li {
+        display: block;
+    }
+
+    h1 {
+        font-size: 4rem;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        text-align: left;
+
+        padding: 0;
+    }
+
+    .socialIcons {
+        padding: 0;
+        position: absolute;
+        top: 0;
+    }
+
     /* Section 2 Styles  */
     
     .section2 h2 {
@@ -610,13 +638,6 @@ input::placeholder {
 
 @media (max-width: 480px) {
 
-    /* Footer (480px) */
-
-    /* .zebraImage img,
-    .kittyImage img{
-        object-fit: cover; 
-    } */
-
     /* Section 4 Styles (480px) */
 
     .section4 div {
@@ -634,5 +655,4 @@ input::placeholder {
     .section4 input {
         margin-bottom: 100px;
     }
-  
 }
